@@ -5,7 +5,7 @@ const router = express.Router();
 const Usuario = require("../models/Usuario");
 const Profissional = require("../models/Profissional");
 
-router.post("/login", async (req, res) => {
+router.post("/", async (req, res) => {
   const { LOGUSUARIO, SENHAUSUA } = req.body;
 
   try {
