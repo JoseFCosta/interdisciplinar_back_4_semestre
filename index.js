@@ -7,7 +7,6 @@ const itemvenda = require("./src/routes/itemvenda");
 const ordemcompra = require("./src/routes/ordemcompra");
 const planoconta = require("./src/routes/planoconta");
 const login = require("./src/routes/login");
-const teste = require("./src/routes/teste");
 
 const cors = require("cors");
 const app = express();
@@ -26,7 +25,6 @@ app.use("/itemvenda", itemvenda);
 app.use("/ordemcompra", ordemcompra);
 app.use("/planoconta", planoconta);
 app.use("/login", login);
-app.use("/teste", teste);
 
 const PORT = process.env.PORT;
 
